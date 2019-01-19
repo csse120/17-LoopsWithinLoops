@@ -2,8 +2,8 @@
 This project demonstrates NESTED LOOPS (i.e., loops within loops)
 in the context of SEQUENCES OF SUB-SEQUENCES.
 
-Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues, and many others before them.
+Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
+         Mark Hays, Amanda Stouder, Aaron Wilkin, and their colleagues.
 """
 # ----------------------------------------------------------------------
 # Students: READ and RUN this program.  There is nothing else for you
