@@ -44,7 +44,7 @@ def rectangle_of_stars(r, c):
        *****
     Preconditions:  r and c are non-negative integers.
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Some tests are already written for you (above).
     #
@@ -61,7 +61,7 @@ def rectangle_of_stars(r, c):
     #   ** You may NOT use string multiplication **
     #   in this or the other problems in this module, as doing so
     #   would defeat the goal of providing practice at loops within loops.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
 def run_test_triangle_of_stars():
@@ -98,7 +98,7 @@ def triangle_of_stars(r):
        *****
     Precondition:  r is a non-negative integer.
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #          Some tests are already written for you (above).
     #
@@ -116,7 +116,7 @@ def triangle_of_stars(r):
     #   ** You may NOT use string multiplication **
     #   in this or the other problems in this module, as doing so
     #   would defeat the goal of providing practice at loops within loops.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
 def run_test_decreasing_exclamation_marks():
@@ -150,7 +150,7 @@ def decreasing_exclamation_marks(m, n):
        !!
     Precondition:  m and n are positive integers with m >= n.
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     #          Some tests are already written for you (above).
     #
@@ -158,7 +158,7 @@ def decreasing_exclamation_marks(m, n):
     #   ** You may NOT use string multiplication **
     #   in this or the other problems in this module, as doing so
     #   would defeat the goal of providing practice at loops within loops.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
 def run_test_alternating_brackets():
@@ -192,7 +192,7 @@ def alternating_brackets(m, n):
        []
     Precondition:  m and n are positive integers with m >= n.
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #          Some tests are already written for you (above).
     #
@@ -200,7 +200,7 @@ def alternating_brackets(m, n):
     #   ** You may NOT use string multiplication **
     #   in this or the other problems in this module, as doing so
     #   would defeat the goal of providing practice at loops within loops.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
 def run_test_triangle_same_number_in_each_row():
@@ -235,7 +235,7 @@ def triangle_same_number_in_each_row(r):
        55555
     Precondition:  r is a non-negative integer.
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 6. Implement and test this function.
     #          Some tests are already written for you (above).
     #
@@ -243,7 +243,7 @@ def triangle_same_number_in_each_row(r):
     #   ** You may NOT use string multiplication **
     #   in this or the other problems in this module, as doing so
     #   would defeat the goal of providing practice at loops within loops.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
 def run_test_triangle_all_numbers_in_each_row():
@@ -278,7 +278,7 @@ def triangle_all_numbers_in_each_row(r):
        12345
     Precondition:  r is a non-negative integer.
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # TODO: 7. Implement and test this function.
     #          Some tests are already written for you (above).
     #
@@ -286,10 +286,10 @@ def triangle_all_numbers_in_each_row(r):
     #   ** You may NOT use string multiplication **
     #   in this or the other problems in this module, as doing so
     #   would defeat the goal of providing practice at loops within loops.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 main()

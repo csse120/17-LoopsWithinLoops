@@ -26,36 +26,36 @@ def nested_loops_in_graphics_example():
 
     window.continue_on_mouse_click('Click to run Example 1.')
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     starting_point = rg.Point(50, 50)
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # First set of circles
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     radius = 20
     starting_circle = rg.Circle(starting_point, radius)
 
     rectangle_of_circles(window, starting_circle.clone(), 4, 12)
     window.continue_on_mouse_click('Click to run Example 2.')
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # Second set of circles
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     starting_circle.move_by(180, 400)
 
     rectangle_of_circles(window, starting_circle.clone(), 14, 2)
     window.continue_on_mouse_click('Click to run Example 3.')
 
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # Third and last set of circles
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     starting_circle.move_by(200, -400)
 
     triangle_of_circles(window, starting_circle.clone(), 8)
     window.close_on_mouse_click()
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # TODO: 2.
 #  *** Unless your instructor directs you otherwise,
 #      watch the video
@@ -72,7 +72,7 @@ def nested_loops_in_graphics_example():
 #   and you feel that you understand the TECHNIQUE it presents, THEN:
 #
 #     *** Change the TO DO above to DONE. ***
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
 
 def rectangle_of_circles(window, circle, m, n):
@@ -108,7 +108,7 @@ def rectangle_of_circles(window, circle, m, n):
         x = original_x  # Reset x to the left-edge, for the next row
 
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # TODO: 3.
 #  *** Unless your instructor directs you otherwise,
 #      watch the video
@@ -125,7 +125,7 @@ def rectangle_of_circles(window, circle, m, n):
 #   and you feel that you understand the TECHNIQUE it presents, THEN:
 #
 #     *** Change the TO DO above to DONE. ***
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
 
 def triangle_of_circles(window, circle, n):
@@ -143,11 +143,11 @@ def triangle_of_circles(window, circle, n):
       :type n: int
     and m is a small, positive integer.
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # NOTE: The solution below is IDENTICAL to the rectangle_of_circles
     #       solution except that the INNER loop has  j+1  instead of m.
     # Make sure you understand why this works!
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     original_x = circle.center.x
     original_y = circle.center.y
     radius = circle.radius
@@ -166,7 +166,7 @@ def triangle_of_circles(window, circle, n):
         x = original_x  # Reset x to the left-edge, for the next row
 
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 main()

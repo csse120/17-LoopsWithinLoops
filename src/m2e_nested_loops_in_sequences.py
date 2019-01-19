@@ -5,11 +5,11 @@ in the context of SEQUENCES OF SUB-SEQUENCES.
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, and their colleagues.
 """
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Students: READ and RUN this program.  There is nothing else for you
 #           to do in here. But DO study these examples carefully,
 #           and refer back to them as necessary.
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
 
 def main():
@@ -90,13 +90,13 @@ def sequence_of_sequence_example(sequence_of_lists):
        and the elements of the lists can be multiplied by an integer.
        [FYI: This 'can be multiplied ...' is an example of DUCK TYPING.]
     """
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     # Classic sequence of sequences:
     #    - Each loop is simply the pattern you have seen many times.
     #    - But INSIDE the OUTER loop and BEFORE the INNER loop,
     #         you can 'extract' the current (OUTER loop) SUB-list
     #         to loop through it in the INNER loop.
-    # ------------------------------------------------------------------
+    # -------------------------------------------------------------------------
     for j in range(len(sequence_of_lists)):
 
         sublist = sequence_of_lists[j]
@@ -113,7 +113,7 @@ def sequence_of_sequence_example2(sequence_of_lists):
             sequence_of_lists[j][k] = sequence_of_lists[j][k] * (j + 1)
 
 
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# ----------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 main()
