@@ -47,20 +47,20 @@ def rectangle_of_stars(r, c):
     # -------------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
     #          Some tests are already written for you (above).
-    #
+    #  __
     #  *** Unless your instructor directs you otherwise,
     #      see the video
     #          nested_loops_in_PRINTING.mp4
-    #      in Preparation for Session 18
+    #      in the PREPARATION for this session
     #          ** NOW **
     #      and follow along in that video as you do this problem.
     #      (Pause the video when it completes this problem.)
     #  ***
-    #
-    # IMPLEMENTATION RESTRICTION:
-    #   ** You may NOT use string multiplication **
-    #   in this or the other problems in this module, as doing so
-    #   would defeat the goal of providing practice at loops within loops.
+    #  __
+    #  IMPLEMENTATION RESTRICTION:
+    #    ** You may NOT use string multiplication **
+    #       in this or the other problems in this module, as doing so
+    #       would defeat the goal of providing practice at loops within loops.
     # -------------------------------------------------------------------------
 
 
@@ -101,21 +101,21 @@ def triangle_of_stars(r):
     # -------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #          Some tests are already written for you (above).
-    #
+    #  __
     #  *** Unless your instructor directs you otherwise,
     #      see the video
     #          nested_loops_in_PRINTING.mp4
-    #      in Preparation for Session 18
+    #      in the PREPARATION for this session
     #          ** NOW **
     #      and follow along in that video as you do this problem.
     #      (Continue the video from where you paused it
     #      in the previous problem.)
     #  ***
-    #
-    # IMPLEMENTATION RESTRICTION:
-    #   ** You may NOT use string multiplication **
-    #   in this or the other problems in this module, as doing so
-    #   would defeat the goal of providing practice at loops within loops.
+    #  __
+    #  IMPLEMENTATION RESTRICTION:
+    #    ** You may NOT use string multiplication **
+    #       in this or the other problems in this module, as doing so
+    #       would defeat the goal of providing practice at loops within loops.
     # -------------------------------------------------------------------------
 
 
@@ -153,11 +153,7 @@ def decreasing_exclamation_marks(m, n):
     # -------------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     #          Some tests are already written for you (above).
-    #
-    # IMPLEMENTATION RESTRICTION:
-    #   ** You may NOT use string multiplication **
-    #   in this or the other problems in this module, as doing so
-    #   would defeat the goal of providing practice at loops within loops.
+    #  IMPLEMENTATION RESTRICTION: ** You may NOT use string multiplication **.
     # -------------------------------------------------------------------------
 
 
@@ -195,11 +191,7 @@ def alternating_brackets(m, n):
     # -------------------------------------------------------------------------
     # TODO: 5. Implement and test this function.
     #          Some tests are already written for you (above).
-    #
-    # IMPLEMENTATION RESTRICTION:
-    #   ** You may NOT use string multiplication **
-    #   in this or the other problems in this module, as doing so
-    #   would defeat the goal of providing practice at loops within loops.
+    #  IMPLEMENTATION RESTRICTION: ** You may NOT use string multiplication **.
     # -------------------------------------------------------------------------
 
 
@@ -238,11 +230,7 @@ def triangle_same_number_in_each_row(r):
     # -------------------------------------------------------------------------
     # TODO: 6. Implement and test this function.
     #          Some tests are already written for you (above).
-    #
-    # IMPLEMENTATION RESTRICTION:
-    #   ** You may NOT use string multiplication **
-    #   in this or the other problems in this module, as doing so
-    #   would defeat the goal of providing practice at loops within loops.
+    #  IMPLEMENTATION RESTRICTION: ** You may NOT use string multiplication **.
     # -------------------------------------------------------------------------
 
 
@@ -281,11 +269,7 @@ def triangle_all_numbers_in_each_row(r):
     # -------------------------------------------------------------------------
     # TODO: 7. Implement and test this function.
     #          Some tests are already written for you (above).
-    #
-    # IMPLEMENTATION RESTRICTION:
-    #   ** You may NOT use string multiplication **
-    #   in this or the other problems in this module, as doing so
-    #   would defeat the goal of providing practice at loops within loops.
+    #  IMPLEMENTATION RESTRICTION: ** You may NOT use string multiplication **.
     # -------------------------------------------------------------------------
 
 
