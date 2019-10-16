@@ -4,13 +4,29 @@ in the context of SEQUENCES OF SUB-SEQUENCES.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Derek Whitley, their colleagues,
-         and many others before them.
-"""
-# -----------------------------------------------------------------------------
-# Students: READ and RUN this program.  There is nothing else for you
-#           to do in here. But DO study these examples carefully,
-#           and refer back to them as necessary.
-# -----------------------------------------------------------------------------
+         many others before them, and now PUT_YOUR_NAME_HERE.
+"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+
+###############################################################################
+# TODO: 2.  Read and run this program, examining the code and the output.
+#           Then answer the questions below, writing answers in this comment.
+#  __
+#   1. Which feels more clear to you?
+#        -- classic_example_1, or
+#        -- classic_example_2
+#   Note: reasonable people could disagree on the answer to this question.
+#  __
+#   2. Do you understand why the final example crashes?
+#        Yes or No?     [If No, ASK FOR HELP NOW!]
+#  __
+#   3. Do you believe that you can you READ and TRACE BY HAND
+#      simple nested loops like the examples in this module?
+#        Yes or No?     [If No, ASK FOR HELP NOW!]
+#  __
+#  After you have completed the above, change the above _TODO_ to DONE.
+#  As always,  *** GET HELP AS NEEDED.  ***
+###############################################################################
+
 import time
 import testing_helper
 
