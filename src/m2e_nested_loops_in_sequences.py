@@ -3,117 +3,143 @@ This project demonstrates NESTED LOOPS (i.e., loops within loops)
 in the context of SEQUENCES OF SUB-SEQUENCES.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Mark Hays, Amanda Stouder, Derek Whitley, and their colleagues.
+         Mark Hays, Amanda Stouder, Derek Whitley, their colleagues,
+         and many others before them.
 """
 # -----------------------------------------------------------------------------
 # Students: READ and RUN this program.  There is nothing else for you
 #           to do in here. But DO study these examples carefully,
 #           and refer back to them as necessary.
 # -----------------------------------------------------------------------------
+import time
+import testing_helper
 
 
 def main():
     """ Calls the other functions to demonstrate them. """
-    demonstrate_sequence_of_sequences()
+    list_of_lists = [[4, 0, 100],
+                     [1, 2, 3],
+                     [100, 100, 20, 30, 20, 1]]
 
+    tuple_of_lists = ([10, 5],
+                      [5, 10, 5, 8, 20],
+                      ['a', 'b', 'c', 8],
+                      ['the', 'rain', 'in spain', 5, 'falls'],
+                      ['mainly on the plain.'])
 
-def demonstrate_sequence_of_sequences():
-    """
-    Demonstrates     seqeunce_of_sequence_example
-       -- a classic example of manipulating a SEQUENCE of SUB-SEQUENCES.
-    Also shows mutating those sub-sequences.
-    """
-    tuple_of_lists1 = ([4, 0, 100],
-                       [1, 2, 3],
-                       [100, 100, 20, 30])
+    list_of_strings = ['hello', 'how', 'are', 'you?']
 
-    tuple_of_lists2 = (['the', 'rain'],
-                       ['in spain', 'falls', 'mainly on the'],
-                       ['plain.'])
-
-    tuple_of_lists3 = ([10, 5],
-                       [10, 5, 5, 8, 20],
-                       ['a', 'b', 'c'],
-                       ['d'],
-                       ['e', 'f'])
-
-    tuple_of_lists3b = ([10, 5],
-                        [10, 5, 5, 8, 20],
-                        ['a', 'b', 'c'],
-                        ['d'],
-                        ['e', 'f'])
-
-    print()
-    print('-----------------------------------------------------------')
-    print('This example MUTATES each SUB-sequence, by multiplying')
-    print('the 1st sub-sequence by 1, the 2nd by 2, the 3rd by 3, ...')
-    print('-----------------------------------------------------------')
-    print()
-    print('The sequences BEFORE and AFTER the call, respectively, are:')
-    print('   ', tuple_of_lists1)
-
-    sequence_of_sequence_example(tuple_of_lists1)
-    print('   ', tuple_of_lists1)
-
-    print()
-    print('The sequences BEFORE and AFTER the call, respectively, are:')
-    print('   ', tuple_of_lists2)
-
-    sequence_of_sequence_example(tuple_of_lists2)
-    print('   ', tuple_of_lists2)
-
-    print()
-    print('The sequences BEFORE and AFTER the call, respectively, are:')
-    print('   ', tuple_of_lists3)
-
-    sequence_of_sequence_example(tuple_of_lists3)
-    print('   ', tuple_of_lists3)
-
-    print()
-    print('Same as previous, but using [xx][yy] notation in the code:')
-    print('   ', tuple_of_lists3b)
-
-    sequence_of_sequence_example2(tuple_of_lists3b)
-    print('   ', tuple_of_lists3b)
-
-
-def sequence_of_sequence_example(sequence_of_lists):
-    """
-    In the given sequence of lists,
-      -- multiplies each element of the first list by 1,
-      -- multiplies each element of the second list by 2,
-      -- multiplies each element of the third list by 3,
-      -- and so forth.
-    MUTATES the given lists (but NOT the given sequence).
-
-    Preconditions: The argument is a sequence of lists,
-       and the elements of the lists can be multiplied by an integer.
-       [FYI: This 'can be multiplied ...' is an example of DUCK TYPING.]
-    """
     # -------------------------------------------------------------------------
-    # Classic sequence of sequences:
-    #    - Each loop is simply the pattern you have seen many times.
-    #    - But INSIDE the OUTER loop and BEFORE the INNER loop,
-    #         you can 'extract' the current (OUTER loop) SUB-list
-    #         to loop through it in the INNER loop.
+    # Calls  classic_example_1   to PRINT all the sub-items.
     # -------------------------------------------------------------------------
-    for j in range(len(sequence_of_lists)):
+    classic_example_1(list_of_lists)
+    classic_example_1(tuple_of_lists)
+    classic_example_1(list_of_strings)
 
-        sublist = sequence_of_lists[j]
+    # -------------------------------------------------------------------------
+    # Calls  classic_example_2   to show the equivalent [][] notation.
+    # -------------------------------------------------------------------------
+    classic_example_2(list_of_lists)
+    classic_example_2(tuple_of_lists)
+    classic_example_2(list_of_strings)
 
-        for k in range(len(sublist)):
-            sublist[k] = sublist[k] * (j + 1)
+    # -------------------------------------------------------------------------
+    # Calls  classic_example_3   to show mutating a sequence of lists.
+    # The final example shows that attempting to mutate a STRING fails.
+    # -------------------------------------------------------------------------
+    count = classic_example_3(list_of_lists, 100, 'oops')
+    print('Number of occurrences of {} is {}.'.format(100, count))
+    print('The mutated list of lists is:')
+    print(list_of_lists)
+
+    count = classic_example_3(tuple_of_lists, 5, 'five')
+    print('Number of occurrences of {} is {}.'.format(5, count))
+    print('The mutated tuple of lists is:')
+    print(tuple_of_lists)
+
+    # The next example will throw a TypeError (and crash) with this message:
+    #   TypeError: 'str' object does not support item assignment
+    count = classic_example_3(list_of_strings, 'o', 'x')
+    print('Number of occurrences of {} is {}.'.format('o', count))
+    print('The mutated list of STRINGS is:')
+    print(list_of_strings)
 
 
-def sequence_of_sequence_example2(sequence_of_lists):
-    """ Same as previous example, but slightly different notation. """
-    # Same as previous, but without the sublist variable.
-    for j in range(len(sequence_of_lists)):
-        for k in range(len(sequence_of_lists[j])):
-            sequence_of_lists[j][k] = sequence_of_lists[j][k] * (j + 1)
+def classic_example_1(sequence_of_sequences):
+    """ Prints the items in the sequence of sequences. """
+    print()
+    print('------------------------------------------------')
+    print('Classic example 1 on this sequence of sequences:')
+    print(sequence_of_sequences)
+    print('------------------------------------------------')
+
+    for k in range(len(sequence_of_sequences)):
+        sequence = sequence_of_sequences[k]
+        print("  Beginning inner sequence at outer index", k)
+        for j in range(len(sequence)):
+            print(sequence[j])
+        print("  Ending inner sequence at outer index", k)
+
+
+def classic_example_2(sequence_of_sequences):
+    """ Same as preceding example but using [][] notation. """
+    print()
+    print('------------------------------------------------')
+    print('Classic example 2 on this sequence of sequences:')
+    print(sequence_of_sequences)
+    print('------------------------------------------------')
+
+    for k in range(len(sequence_of_sequences)):
+        print("  Beginning inner sequence at outer index", k)
+        for j in range(len(sequence_of_sequences[k])):
+            print(sequence_of_sequences[k][j])
+        print("  Ending inner sequence at outer index", k)
+
+
+def classic_example_3(sequence_of_sequences,
+                      what_to_count, what_to_mutate_into):
+    """
+    Shows counting and mutating in a sequence of LISTS.
+      -- Counts and returns the number of 'what_to_count' occurrences.
+      -- Mutates those occurrences into the 'what_to_mutate_into'.
+    """
+    print()
+    print('------------------------------------------------')
+    print('Classic example 3 on this sequence of LISTS:')
+    print(sequence_of_sequences)
+    print('------------------------------------------------')
+
+    count = 0
+    for k in range(len(sequence_of_sequences)):
+        sequence = sequence_of_sequences[k]
+        for j in range(len(sequence)):
+            if sequence[j] == what_to_count:
+                count = count + 1
+                sequence[j] = what_to_mutate_into
+    return count
 
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
+# The   try .. except   prevents error messages on the console from being
+# intermingled with ordinary output to the console.
 # -----------------------------------------------------------------------------
-main()
+# To allow color-coding the output to the console:
+USE_COLORING = True  # Change to False to revert to OLD style coloring
+
+testing_helper.USE_COLORING = USE_COLORING
+if USE_COLORING:
+    # noinspection PyShadowingBuiltins
+    print = testing_helper.print_colored
+else:
+    # noinspection PyShadowingBuiltins
+    print = testing_helper.print_uncolored
+
+try:
+    main()
+except Exception:
+    print('ERROR - While running this test,', color='red')
+    print('your code raised the following exception:', color='red')
+    print()
+    time.sleep(1)
+    raise
