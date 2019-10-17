@@ -13,9 +13,9 @@ def main():
     print()
     print("Un-comment and re-comment calls in MAIN one by one as you work.")
 
-    run_test_alternating_brackets()
-    run_test_triangle_same_number_in_each_row()
-    run_test_triangle_all_numbers_in_each_row()
+    # run_test_alternating_brackets()
+    # run_test_triangle_same_number_in_each_row()
+    # run_test_triangle_all_numbers_in_each_row()
 
 
 def run_test_alternating_brackets():
