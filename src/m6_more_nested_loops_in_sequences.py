@@ -13,9 +13,12 @@ import testing_helper
 
 def main():
     """ Calls the other functions to test them. """
-    run_test_multiply_numbers()
-    run_test_print_characters()
-    run_test_print_characters_slanted()
+    print()
+    print("Un-comment and re-comment calls in MAIN one by one as you work.")
+
+    # run_test_multiply_numbers()
+    # run_test_print_characters()
+    # run_test_print_characters_slanted()
 
 
 def run_test_multiply_numbers():
@@ -246,14 +249,10 @@ def print_characters(sequence_of_strings):
     Precondition:  the given argument is a sequence of strings.
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # TODO: 3. Implement and test this function.
     #  ** READ THE TESTS that have been written for you (ABOVE).
     #  ** ASK QUESTIONS if you do not understand the TESTS (ABOVE).
     # -------------------------------------------------------------------------
-    for k in range(len(sequence_of_strings)):
-        s = sequence_of_strings[k]
-        for j in range(len(s)):
-            print(s[j])
 
 
 def run_test_print_characters_slanted():
@@ -324,18 +323,13 @@ def print_characters_slanted(sequence_of_strings):
     Precondition:  the given argument is a sequence of strings.
     """
     # -------------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # TODO: 4. Implement and test this function.
     #  ** READ THE TESTS that have been written for you (ABOVE).
     #  ** ASK QUESTIONS if you do not understand the TESTS (ABOVE).
     #  __
     #  ** HINT: ** Consider using string multiplication for the spaces
     #              and string addition to stitch the spaces to the character.
     # -------------------------------------------------------------------------
-    for k in range(len(sequence_of_strings)):
-        s = sequence_of_strings[k]
-        for j in range(len(s)):
-            spaces = j * ' '
-            print(spaces + s[j])
 
 
 ###############################################################################
