@@ -57,7 +57,7 @@ def run_test_draw_L():
 
 def draw_L(window, circle, r, c):
     """
-    See   L.pdf   in this project for pictures that may
+    See   pictures_for_L.pdf   in this project for pictures that may
     help you better understand the following specification:
 
     Draws an 'L' of circles on the given rg.RoseWindow.
@@ -105,7 +105,7 @@ def run_test_draw_wall_on_right():
 
 def draw_wall_on_right(rectangle, n, window):
     """
-    See   Walls.pdf   in this project for pictures that may
+    See   pictures_for_Walls.pdf   in this project for pictures that may
     help you better understand the following specification:
 
     Draws an n x n RIGHT-justified triangle of rectangles
