@@ -111,11 +111,7 @@ def triangle_of_stars(r):
     #      (Continue the video from where you paused it
     #      in the previous problem.)
     #  ***
-    #  __
-    #  IMPLEMENTATION RESTRICTION:
-    #    ** You may NOT use string multiplication **
-    #       in this or the other problems in this module, as doing so
-    #       would defeat the goal of providing practice at loops within loops.
+    #  IMPLEMENTATION RESTRICTION: ** You may NOT use string multiplication **.
     # -------------------------------------------------------------------------
 
 
