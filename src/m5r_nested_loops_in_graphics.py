@@ -9,6 +9,24 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 
 import rosegraphics as rg
 
+# -----------------------------------------------------------------------------
+# TODO: 2.
+#  *** Unless your instructor directs you otherwise,
+#      IF YOU HAVE NOT ALREADY WATCHED THE VIDEO
+#          nested_loops_in_GRAPHICS.mp4
+#      in the PREPARATION for this session
+#          do so ** NOW **
+#      As the video proceeds, LOOK AT THE CODE BELOW.
+#      It is the same as in the video.
+#  __
+#  *** USE THE VIDEO to understand the TECHNIQUES used in BOTH examples.
+#  __
+#   AFTER you have watched the video, asking questions as needed,
+#   and you feel that you understand the TECHNIQUES it presents, THEN:
+#  __
+#     *** Change the _TODO_ above to DONE. ***
+# -----------------------------------------------------------------------------
+
 
 def main():
     """ Calls the other functions to demonstrate them. """
@@ -55,25 +73,6 @@ def nested_loops_in_graphics_example():
     triangle_of_circles(window, starting_circle.clone(), 8)
     window.close_on_mouse_click()
 
-# -----------------------------------------------------------------------------
-# TODO: 2.
-#  *** Unless your instructor directs you otherwise,
-#      watch the video
-#          nested_loops_in_GRAPHICS.mp4
-#      in Preparation for Session 18
-#          ** NOW **
-#      As the video proceeds, LOOK AT THE CODE BELOW.
-#      It is the same as the video.
-#      (Pause the video when it completes the following problem.)
-#
-#  *** USE THE VIDEO to understand the TECHNIQUE used in this example.
-#
-#   AFTER you have watched the video, asking questions as needed,
-#   and you feel that you understand the TECHNIQUE it presents, THEN:
-#
-#     *** Change the TO DO above to DONE. ***
-# -----------------------------------------------------------------------------
-
 
 def rectangle_of_circles(window, circle, m, n):
     """
@@ -106,26 +105,6 @@ def rectangle_of_circles(window, circle, m, n):
 
         y = y + 2 * radius  # Move y down, for the next row of circles
         x = original_x  # Reset x to the left-edge, for the next row
-
-
-# -----------------------------------------------------------------------------
-# TODO: 3.
-#  *** Unless your instructor directs you otherwise,
-#      watch the video
-#          nested_loops_in_GRAPHICS.mp4
-#      in Preparation for Session 18
-#          ** NOW **
-#      As the video proceeds, LOOK AT THE CODE BELOW.
-#      It is the same as the video.
-#      (Continue the video from where you paused it in the previous problem.)
-#
-#  *** USE THE VIDEO to understand the TECHNIQUE used in this example.
-#
-#   AFTER you have watched the video, asking questions as needed,
-#   and you feel that you understand the TECHNIQUE it presents, THEN:
-#
-#     *** Change the TO DO above to DONE. ***
-# -----------------------------------------------------------------------------
 
 
 def triangle_of_circles(window, circle, n):
