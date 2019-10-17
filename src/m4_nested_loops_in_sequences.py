@@ -13,8 +13,11 @@ import testing_helper
 
 def main():
     """ Calls the other functions to test them. """
-    run_test_sum_numbers()
-    run_test_multiply_by_c()
+    print()
+    print("Un-comment and re-comment calls in MAIN one by one as you work.")
+
+    # run_test_sum_numbers()
+    # run_test_multiply_by_c()
 
 
 def run_test_sum_numbers():
@@ -62,7 +65,7 @@ def run_test_sum_numbers():
     print_actual_result_of_test(expected, actual, test_results)
 
     # -------------------------------------------------------------------------
-    # TODO: 2 (continued): Add your ADDITIONAL test(s) here:
+    # TODO: 2 (continued): Add your ADDITIONAL test here:
     # -------------------------------------------------------------------------
 
     # SUMMARY of test results:
@@ -176,6 +179,7 @@ def run_test_multiply_by_c():
 
     # SUMMARY of test results:
     print_summary_of_test_results(test_results)
+
 
 def multiply_by_c(c, sequence_of_lists):
     """
